@@ -20,7 +20,7 @@
                             <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="21" translatesAutoresizingMaskIntoConstraints="NO" id="C9E-nw-rpn">
                                 <rect key="frame" x="20" y="177" width="374" height="138"/>
                                 <subviews>
-                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="esZ-yd-aZY">
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="esZ-yd-aZY" customClass="shadowView" customModule="Check_My_Liquid" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="0.0" width="110.5" height="138"/>
                                         <subviews>
                                             <stackView opaque="NO" contentMode="scaleToFill" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="k79-QE-59e">
@@ -57,7 +57,7 @@
                                             <constraint firstItem="k79-QE-59e" firstAttribute="leading" secondItem="esZ-yd-aZY" secondAttribute="leadingMargin" id="xXj-iI-HRj"/>
                                         </constraints>
                                     </view>
-                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="WPm-oc-sNf">
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="WPm-oc-sNf" customClass="shadowView" customModule="Check_My_Liquid" customModuleProvider="target">
                                         <rect key="frame" x="131.5" y="0.0" width="111" height="138"/>
                                         <subviews>
                                             <stackView opaque="NO" contentMode="scaleToFill" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="9VM-cY-uTQ">
@@ -94,7 +94,7 @@
                                             <constraint firstItem="GMn-sk-el9" firstAttribute="top" secondItem="9VM-cY-uTQ" secondAttribute="bottom" constant="30" id="vQG-E5-bbo"/>
                                         </constraints>
                                     </view>
-                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="981-c9-7Ss">
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="981-c9-7Ss" customClass="shadowView" customModule="Check_My_Liquid" customModuleProvider="target">
                                         <rect key="frame" x="263.5" y="0.0" width="110.5" height="138"/>
                                         <subviews>
                                             <stackView opaque="NO" contentMode="scaleToFill" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="gce-j9-2en">
