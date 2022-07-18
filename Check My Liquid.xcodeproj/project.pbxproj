@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		FA10CE162884C9B4000FDD3D /* shadowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA10CE152884C9B4000FDD3D /* shadowView.swift */; };
+		FA10CE182884E1E9000FDD3D /* drinksTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA10CE172884E1E9000FDD3D /* drinksTableViewCell.swift */; };
 		FA5D27E42884771A00A10E8A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA5D27E32884771A00A10E8A /* AppDelegate.swift */; };
 		FA5D27E62884771A00A10E8A /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA5D27E52884771A00A10E8A /* SceneDelegate.swift */; };
 		FA5D27E82884771A00A10E8A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA5D27E72884771A00A10E8A /* ViewController.swift */; };
@@ -18,6 +19,7 @@
 
 /* Begin PBXFileReference section */
 		FA10CE152884C9B4000FDD3D /* shadowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = shadowView.swift; sourceTree = "<group>"; };
+		FA10CE172884E1E9000FDD3D /* drinksTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = drinksTableViewCell.swift; sourceTree = "<group>"; };
 		FA5D27E02884771A00A10E8A /* Check My Liquid.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Check My Liquid.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		FA5D27E32884771A00A10E8A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		FA5D27E52884771A00A10E8A /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -70,6 +72,7 @@
 				FA5D27E32884771A00A10E8A /* AppDelegate.swift */,
 				FA5D27E52884771A00A10E8A /* SceneDelegate.swift */,
 				FA5D27E72884771A00A10E8A /* ViewController.swift */,
+				FA10CE172884E1E9000FDD3D /* drinksTableViewCell.swift */,
 				FA5D27E92884771A00A10E8A /* Main.storyboard */,
 				FA5D27EC2884771C00A10E8A /* Assets.xcassets */,
 				FA5D27EE2884771C00A10E8A /* LaunchScreen.storyboard */,
@@ -150,6 +153,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				FA10CE162884C9B4000FDD3D /* shadowView.swift in Sources */,
+				FA10CE182884E1E9000FDD3D /* drinksTableViewCell.swift in Sources */,
 				FA5D27E82884771A00A10E8A /* ViewController.swift in Sources */,
 				FA5D27E42884771A00A10E8A /* AppDelegate.swift in Sources */,
 				FA5D27E62884771A00A10E8A /* SceneDelegate.swift in Sources */,
