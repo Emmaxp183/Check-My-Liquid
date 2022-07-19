@@ -254,16 +254,81 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" image="plus" catalog="system"/>
+                                <connections>
+                                    <action selector="addDrinksButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="X4N-fq-78B"/>
+                                </connections>
                             </button>
                         </barButtonItem>
                     </navigationItem>
                     <connections>
                         <outlet property="tableView" destination="SDw-PY-aFE" id="H8N-xb-Dl4"/>
+                        <segue destination="ciX-nc-ho1" kind="presentation" identifier="drinks" id="BVu-Ds-Ixa"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="800.00000000000011" y="105.80357142857143"/>
+            <point key="canvasLocation" x="541" y="108"/>
+        </scene>
+        <!--Add Drinks View Controller-->
+        <scene sceneID="htK-mh-r2z">
+            <objects>
+                <viewController id="ciX-nc-ho1" customClass="addDrinksViewController" customModule="Check_My_Liquid" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="MPF-Gf-oaP">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <navigationBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="218-0b-IcG">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="56"/>
+                                <textAttributes key="titleTextAttributes">
+                                    <fontDescription key="fontDescription" style="UICTFontTextStyleTitle3"/>
+                                    <color key="textColor" systemColor="systemBlueColor"/>
+                                </textAttributes>
+                                <textAttributes key="largeTitleTextAttributes">
+                                    <color key="textColor" systemColor="systemBlueColor"/>
+                                </textAttributes>
+                                <items>
+                                    <navigationItem title="Add a new drink" id="FMJ-LQ-U4g"/>
+                                </items>
+                            </navigationBar>
+                            <pickerView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="PR9-mP-Hfb">
+                                <rect key="frame" x="0.0" y="71" width="414" height="216"/>
+                            </pickerView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xAP-ub-Y32" customClass="saveButton" customModule="Check_My_Liquid" customModuleProvider="target">
+                                <rect key="frame" x="42" y="404" width="330" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="QYj-dB-djb"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Save drinks">
+                                    <backgroundConfiguration key="background">
+                                        <color key="backgroundColor" systemColor="systemBlueColor"/>
+                                    </backgroundConfiguration>
+                                    <fontDescription key="titleFontDescription" style="UICTFontTextStyleTitle2"/>
+                                    <color key="baseForegroundColor" systemColor="systemBackgroundColor"/>
+                                </buttonConfiguration>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="lcd-AV-Orb"/>
+                        <color key="backgroundColor" red="0.84313725490000002" green="0.8980392157" blue="0.94901960780000005" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <constraints>
+                            <constraint firstItem="lcd-AV-Orb" firstAttribute="trailing" secondItem="xAP-ub-Y32" secondAttribute="trailing" constant="42" id="32i-fD-Dur"/>
+                            <constraint firstItem="218-0b-IcG" firstAttribute="top" secondItem="MPF-Gf-oaP" secondAttribute="top" id="4VD-li-a3m"/>
+                            <constraint firstItem="218-0b-IcG" firstAttribute="leading" secondItem="lcd-AV-Orb" secondAttribute="leading" id="5TW-Ur-3PF"/>
+                            <constraint firstItem="xAP-ub-Y32" firstAttribute="top" secondItem="PR9-mP-Hfb" secondAttribute="bottom" constant="117" id="9g5-Ql-FD0"/>
+                            <constraint firstItem="xAP-ub-Y32" firstAttribute="leading" secondItem="lcd-AV-Orb" secondAttribute="leading" constant="42" id="A3U-Bv-N3N"/>
+                            <constraint firstItem="218-0b-IcG" firstAttribute="trailing" secondItem="lcd-AV-Orb" secondAttribute="trailing" id="RI1-kw-uuD"/>
+                            <constraint firstItem="PR9-mP-Hfb" firstAttribute="top" secondItem="218-0b-IcG" secondAttribute="bottom" constant="15" id="n5j-3k-U6s"/>
+                            <constraint firstItem="PR9-mP-Hfb" firstAttribute="trailing" secondItem="lcd-AV-Orb" secondAttribute="trailing" id="nMs-OC-WOD"/>
+                            <constraint firstItem="PR9-mP-Hfb" firstAttribute="leading" secondItem="lcd-AV-Orb" secondAttribute="leading" id="ru5-eI-Gqq"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="pickerView" destination="PR9-mP-Hfb" id="YAc-oR-qDT"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ogZ-d3-SRM" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1373.913043478261" y="107.8125"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="KaD-uP-rB2">

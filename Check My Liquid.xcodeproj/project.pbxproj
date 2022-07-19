@@ -15,6 +15,8 @@
 		FA5D27EB2884771A00A10E8A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FA5D27E92884771A00A10E8A /* Main.storyboard */; };
 		FA5D27ED2884771C00A10E8A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FA5D27EC2884771C00A10E8A /* Assets.xcassets */; };
 		FA5D27F02884771C00A10E8A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FA5D27EE2884771C00A10E8A /* LaunchScreen.storyboard */; };
+		FA98D893288626D30023C420 /* addDrinksViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA98D892288626D30023C420 /* addDrinksViewController.swift */; };
+		FA98D8952886316E0023C420 /* saveButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA98D8942886316E0023C420 /* saveButton.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +30,8 @@
 		FA5D27EC2884771C00A10E8A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		FA5D27EF2884771C00A10E8A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		FA5D27F12884771C00A10E8A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FA98D892288626D30023C420 /* addDrinksViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = addDrinksViewController.swift; sourceTree = "<group>"; };
+		FA98D8942886316E0023C420 /* saveButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = saveButton.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -74,6 +78,8 @@
 				FA5D27E72884771A00A10E8A /* ViewController.swift */,
 				FA10CE172884E1E9000FDD3D /* drinksTableViewCell.swift */,
 				FA5D27E92884771A00A10E8A /* Main.storyboard */,
+				FA98D8942886316E0023C420 /* saveButton.swift */,
+				FA98D892288626D30023C420 /* addDrinksViewController.swift */,
 				FA5D27EC2884771C00A10E8A /* Assets.xcassets */,
 				FA5D27EE2884771C00A10E8A /* LaunchScreen.storyboard */,
 				FA5D27F12884771C00A10E8A /* Info.plist */,
@@ -153,9 +159,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				FA10CE162884C9B4000FDD3D /* shadowView.swift in Sources */,
+				FA98D893288626D30023C420 /* addDrinksViewController.swift in Sources */,
 				FA10CE182884E1E9000FDD3D /* drinksTableViewCell.swift in Sources */,
 				FA5D27E82884771A00A10E8A /* ViewController.swift in Sources */,
 				FA5D27E42884771A00A10E8A /* AppDelegate.swift in Sources */,
+				FA98D8952886316E0023C420 /* saveButton.swift in Sources */,
 				FA5D27E62884771A00A10E8A /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

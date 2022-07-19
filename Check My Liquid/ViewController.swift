@@ -19,7 +19,12 @@ class ViewController: UIViewController {
         tableView.delegate = self
     }
 
-
+    @IBAction func addDrinksButtonTapped(_ sender: Any) {
+   
+    performSegue(withIdentifier: "drinks", sender: self)
+    
+    }
+    
 }
 
 extension ViewController: UITableViewDataSource,UITableViewDelegate{
