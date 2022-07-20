@@ -261,7 +261,10 @@
                         </barButtonItem>
                     </navigationItem>
                     <connections>
+                        <outlet property="juiceLabel" destination="GMn-sk-el9" id="EoC-pX-9nm"/>
+                        <outlet property="sodaLabl" destination="Ftz-Hw-1Lo" id="Mcc-hY-WTF"/>
                         <outlet property="tableView" destination="SDw-PY-aFE" id="H8N-xb-Dl4"/>
+                        <outlet property="waterLabel" destination="nTr-FG-hqz" id="aCN-GB-TlX"/>
                         <segue destination="ciX-nc-ho1" kind="presentation" identifier="drinks" id="BVu-Ds-Ixa"/>
                     </connections>
                 </viewController>
@@ -306,6 +309,9 @@
                                     <fontDescription key="titleFontDescription" style="UICTFontTextStyleTitle2"/>
                                     <color key="baseForegroundColor" systemColor="systemBackgroundColor"/>
                                 </buttonConfiguration>
+                                <connections>
+                                    <action selector="drinksButtonTapped:" destination="ciX-nc-ho1" eventType="touchUpInside" id="je3-zv-6VF"/>
+                                </connections>
                             </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="lcd-AV-Orb"/>

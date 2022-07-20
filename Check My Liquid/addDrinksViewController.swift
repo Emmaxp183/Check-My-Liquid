@@ -21,8 +21,26 @@ class addDrinksViewController: UIViewController {
        
     }
     
+//
 
-
+    
+    @IBAction func drinksButtonTapped(_ sender: Any) {
+        let defaults = UserDefaults.standard
+        let selectedDrink = pickerView.selectedRow(inComponent: 0)
+        let selectedAmount = pickerView.selectedRow(inComponent: 1)
+        let savedDrink = pickerData[0][selectedDrink]
+        let savedAmount = pickerData[1][selectedAmount]
+        let dict = ["drink": savedDrink, "amount": savedAmount]
+        
+        var drinksArray : [[String:String]] = defaults.value(forKey: "MyDrinks") as? [[String:String]] ?? []
+        
+        drinksArray.append(dict)
+        defaults.set(drinksArray, forKey: "MyDrinks")
+        print(drinksArray)
+        dismiss(animated: true,completion: nil)
+    }
+    
+    
 }
 
 
